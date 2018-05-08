@@ -1,6 +1,6 @@
 
 /*
- * Process the URL of the current tab.
+ * Hand the URL of the current tab over to the content script.
  */
 function onSuccess(tabs) {
   var tab = tabs[0];
