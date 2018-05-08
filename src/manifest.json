@@ -1,8 +1,8 @@
 {
   "description": "Play media on current URL in external application.",
   "manifest_version": 2,
-  "name": "open-with",
-  "version": "1.1",
+  "name": "play-with",
+  "version": "1.2",
 
   "background": {
     "scripts": ["background.js"]
