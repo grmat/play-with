@@ -6,6 +6,8 @@ A simple WebExtension to play back media in an external player.
 
 *play-with* was originally intended to use [mpv] via the [youtube-dl] hook for a long list of [supported sites]. However, it will also work with other media players with [M3U] support, e.g. VLC, for direct media URLs.
 
+If you want to use youtube-dl+mpv on Windows, install a recent mpv build and place the youtube-dl.exe inside the mpv folder as described [on this page][mpv-win].
+
 ## About
 
 There have been addons on [AMO] prior to the release of *play-with*, but they depend on [native-messaging]. This WebExtension is designed to work on its own, without the need to install native messaging software on the host.
@@ -25,6 +27,7 @@ This project is licensed under the [GPL]. The used [icon] is from Mozilla's [Pho
 [m3u]: https://en.wikipedia.org/wiki/M3U
 [MPL]: https://www.mozilla.org/en-US/MPL/2.0/
 [mpv]: https://mpv.io/
+[mpv-win]: https://mpv.srsfckn.biz/
 [native-messaging]: https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Native_messaging
 [Photon]: https://design.firefox.com/icons/viewer/#play
 [supported sites]: https://rg3.github.io/youtube-dl/supportedsites.html
