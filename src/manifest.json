@@ -2,7 +2,8 @@
   "description": "Play media on current URL in external application.",
   "manifest_version": 2,
   "name": "play-with",
-  "version": "1.2.2",
+  "version": "1.2.3",
+  "default_locale": "en",
 
   "background": {
     "scripts": ["background.js"]
@@ -17,6 +18,7 @@
 
   "browser_action": {
     "browser_style": true,
+    "default_title": "__MSG_actionName__",
     "default_icon": "icons/play-16.svg",
     "theme_icons": [{
       "light": "icons/play-16-light.svg",
