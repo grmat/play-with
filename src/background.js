@@ -5,7 +5,7 @@
 function invoke(info, tab) {
   var url = tab.url;
   if (info) {
-    url = info.linkUrl;
+    url = info.linkUrl || info.srcUrl;
   }
   console.log("play-with attempting to play url " + url);
   browser.tabs.sendMessage(tab.id, {url: url});
@@ -17,7 +17,7 @@ function invoke(info, tab) {
 browser.contextMenus.create({
   id: "play-with",
   title: browser.i18n.getMessage("actionName"),
-  contexts: ["all"]
+  contexts: ["link", "video"]
 });
 
 /*

@@ -2,7 +2,7 @@
   "description": "Play media on current URL in external application.",
   "manifest_version": 2,
   "name": "play-with",
-  "version": "1.3",
+  "version": "1.3.1",
   "default_locale": "en",
 
   "background": {
