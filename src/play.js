@@ -18,8 +18,8 @@ getting.then(onGot, onError);
 /*
  * Create a M3U playlist file, paste the passed URL into it and download it.
  */
-function download(request, sender, sendResponse) {
-  var content = "#EXTM3U\n" + request.url;
+function download(url) {
+  var content = "#EXTM3U\n" + url;
   var element = document.createElement('a');
   var mime = 'video/x-mpegurl';
 
@@ -42,4 +42,44 @@ function download(request, sender, sendResponse) {
 /*
  * Register listener for message from background script.
  */
-browser.runtime.onMessage.addListener(download);
+browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
+  download(request.url);
+});
+
+var keyBinding;
+var modifier;
+
+function keyListener(e) {
+  var evtobj = window.event ? event : e;
+  switch (modifier) {
+    case "ctrl":
+      modifierMatch = evtobj.ctrlKey;
+      break;
+    case "alt":
+      modifierMatch = evtobj.altKey;
+      break;
+    case "shift":
+      modifierMatch = evtobj.shiftKey;
+      break;
+    default:
+      break;
+  }
+  if (evtobj.key == keyBinding && modifierMatch) download("TODO: insert url");
+}
+
+function onError(error) {
+  console.log(`Error: ${error}`);
+}
+
+function onGot(item) {
+  keyBinding = item.keyBinding;
+  modifier = item.modifier;
+  /*
+   * Register listener for KeyboardEvent
+   */
+  document.onkeydown = keyListener;
+  // document.body.style.border = "10px solid " + color;
+}
+
+var getting = browser.storage.local.get(["keyBinding", "modifier"]);
+getting.then(onGot, onError);

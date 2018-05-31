@@ -2,5 +2,33 @@
   "actionName": {
     "message": "abspielen mit...",
     "description": "Action name for tooltips"
+  },
+  "keyBindingName": {
+    "message": "Tastenkombination",
+    "description": "user-configured key binding"
+  },
+  "options": {
+    "message": "Einstellungen",
+    "description": "Heading for options page"
+  },
+  "save": {
+    "message": "Speichern",
+    "description": "Save button text"
+  },
+  "clear": {
+    "message": "Löschen",
+    "description": "Delete button text"
+  },
+  "shift": {
+    "message": "Umschalt",
+    "description": "Shift modifier"
+  },
+  "ctrl": {
+    "message": "Strg",
+    "description": "Ctrl modifier"
+  },
+  "alt": {
+    "message": "Alt",
+    "description": "Alt modifier"
   }
 }

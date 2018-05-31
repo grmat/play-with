@@ -2,5 +2,33 @@
   "actionName": {
     "message": "play with...",
     "description": "Action name for tooltips"
+  },
+  "keyBindingName": {
+    "message": "key binding",
+    "description": "user-configured key binding"
+  },
+  "options": {
+    "message": "Preferences",
+    "description": "Heading for options page"
+  },
+  "save": {
+    "message": "Save",
+    "description": "Save button text"
+  },
+  "clear": {
+    "message": "Clear",
+    "description": "Delete button text"
+  },
+  "shift": {
+    "message": "Shift",
+    "description": "Shift modifier"
+  },
+  "ctrl": {
+    "message": "Ctrl",
+    "description": "Ctrl modifier"
+  },
+  "alt": {
+    "message": "Alt",
+    "description": "Alt modifier"
   }
 }

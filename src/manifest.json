@@ -28,5 +28,8 @@
   },
   "icons": {
     "16": "icons/play-16.svg"
+  },
+  "options_ui": {
+    "page": "options.html"
   }
 }

@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+  <h1 id="play-with">play-with</h1>
+  <p>A simple WebExtension to play back media in an external player.</p>
+
+  <form>
+    <h2 data-i18n="options"></h2>
+    <label data-i18n="keyBindingName"></label>: 
+    <select id="modifier">
+      <option value="shift" data-i18n="shift"></option>
+      <option value="ctrl" data-i18n="ctrl"></option>
+      <option value="alt" data-i18n="alt"></option>
+    </select>
+    <input type="text" maxlength="1" id="keyBinding">
+    <button type="reset" data-i18n="clear"></button>
+    <button type="submit" data-i18n="save"></button>
+  </form>
+
+    <script src="options.js"></script>
+  </body>
+</html>
