@@ -1,6 +1,7 @@
 # play-with
 
-A simple WebExtension to play back media in an external player.
+A simple WebExtension for Firefox to play back media in an external player.
+Listed on [addons.mozilla.org][AMO-play-with].
 
 ## Compatibilty
 
@@ -22,6 +23,7 @@ This project is licensed under the [GPL]. The used [icon] is from Mozilla's [Pho
 
 <!-- References -->
 [AMO]: https://addons.mozilla.org/
+[AMO-play-with]: https://addons.mozilla.org/firefox/addon/play-with/
 [GPL]: COPYING
 [icon]: src/icons/play-16.svg
 [m3u]: https://en.wikipedia.org/wiki/M3U
